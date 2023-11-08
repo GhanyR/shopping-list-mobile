@@ -45,7 +45,7 @@ class LeftDrawer extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => MyHomePage(), // This is likely a custom widget you've created.
+                  builder: (context) => MyHomePage(), 
                 ),
               );
             },
