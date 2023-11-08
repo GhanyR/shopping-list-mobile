@@ -26,7 +26,7 @@ class _ShopFormPageState extends State<ShopFormPage> {
         backgroundColor: Colors.indigo,
         foregroundColor: Colors.white,
       ),
-      drawer: LeftDrawer(),
+      drawer: const LeftDrawer(),
       body: Form(
         key: _formKey,
         child: SingleChildScrollView(
@@ -110,7 +110,6 @@ class _ShopFormPageState extends State<ShopFormPage> {
                     ),
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        // Assuming you want to show a dialog box
                         showDialog(
                           context: context,
                           builder: (context) {

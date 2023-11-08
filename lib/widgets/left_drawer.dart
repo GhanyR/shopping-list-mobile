@@ -3,7 +3,7 @@ import 'package:shopping_list/screens/menu.dart';
 import 'package:shopping_list/screens/shoplist_form.dart'; 
 
 class LeftDrawer extends StatelessWidget {
-  LeftDrawer({Key? key}) : super(key: key); 
+  const LeftDrawer({Key? key}) : super(key: key); 
 
   @override
   Widget build(BuildContext context) {
@@ -11,11 +11,11 @@ class LeftDrawer extends StatelessWidget {
       child: ListView(
         children: [
           DrawerHeader(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.indigo,
             ),
             child: Column(
-              children: [
+              children: const [
                 Text(
                   'Shopping List',
                   textAlign: TextAlign.center,
@@ -39,8 +39,8 @@ class LeftDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.home_outlined),
-            title: Text('Halaman Utama'),
+            leading: const Icon(Icons.home_outlined),
+            title: const Text('Halaman Utama'),
             onTap: () {
               Navigator.pushReplacement(
                 context,
@@ -51,8 +51,8 @@ class LeftDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.add_shopping_cart),
-            title: Text('Tambah Produk'),
+            leading: const Icon(Icons.add_shopping_cart),
+            title: const Text('Tambah Produk'),
             onTap: () {
               Navigator.push(
                 context,
