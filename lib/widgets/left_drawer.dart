@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_list/menu.dart'; // Update this import based on your project structure
-import 'package:shopping_list/shoplist_form.dart'; // Update this import based on your project structure
+import 'package:shopping_list/screens/menu.dart'; 
+import 'package:shopping_list/screens/shoplist_form.dart'; 
 
 class LeftDrawer extends StatelessWidget {
-  LeftDrawer({Key? key}) : super(key: key); // Removed const here
+  LeftDrawer({Key? key}) : super(key: key); 
 
   @override
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
-        // Removed const from ListView because its children might change
         children: [
           DrawerHeader(
-            // Removed const from DrawerHeader
             decoration: BoxDecoration(
               color: Colors.indigo,
             ),
